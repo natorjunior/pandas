@@ -10,7 +10,7 @@ async def start(update, context):
         chat_id=update.effective_chat.id, 
         text="Olá, eu sou o BOT, como vai?"
     )
-app = ApplicationBuilder().token('5756002288:AAEiHJzE-Nvm7B7EjJHamhNF0hQCRVZ7_uE').build()
+app = ApplicationBuilder().token('TOKEN').build()
 start_handler = CommandHandler('start', start)
 app.add_handler(start_handler)
 app.run_polling()
